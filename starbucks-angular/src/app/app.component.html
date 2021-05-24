@@ -27,8 +27,9 @@
       <button class="tablinks text-upper text-bold">Gift cards</button>
     </div>
     <div class="d-flex align-items-center mr-2">
-      <a class="nav-link black-link font-weight-bold my-auto mr-3" href="/starbucks-angular/src/app/app.component.html"><i class="fas fa-map-marker-alt"
-          aria-hidden="true"></i> Find a store</a>
+      <a class="nav-link black-link font-weight-bold my-auto mr-3"
+        href="/starbucks-angular/src/app/app.component.html"><i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+        Find a store</a>
       <button class="button white-button m-1">Sign in</button>
       <button class="button black-button m-1">Join now</button>
     </div>
@@ -96,81 +97,90 @@
       </div>
     </div>
 
-
     <!--Favorites-->
     <div class="section section-favorites">
 
-      <h2 class="md-semi-bold-heading pt-5">Get your favorites for free</h2>
-      <!-- Tab links -->
-      <div role="tablist" class="tab tier-tab">
-        <button class="tablinks sm-semi-bold-heading" onclick="openReward(event, '25')" id="firstRewardTab">25
-          <i class="fas fa-star gold font-size-xs"></i>
-        </button>
-        <button class="tablinks sm-semi-bold-heading" onclick="openReward(event, '50')">50
-          <i class="fas fa-star gold font-size-xs"></i>
-        </button>
-        <button class="tablinks sm-semi-bold-heading" onclick="openReward(event, '150')">150
-          <i class="fas fa-star gold font-size-xs"></i>
-        </button>
-        <button class="tablinks sm-semi-bold-heading" onclick="openReward(event, '200')">200
-          <i class="fas fa-star gold font-size-xs"></i>
-        </button>
-        <button class="tablinks sm-semi-bold-heading" onclick="openReward(event, '400')">400
-          <i class="fas fa-star gold font-size-xs"></i>
-        </button>
-      </div>
+      <h2 class="md-semi-bold-heading pt-5 pb-5">Get your favorites for free</h2>
 
-      <!-- Tab content -->
-      <div id="25" class="tabcontent">
-        <div class="d-flex align-items-center">
-          <img src="assets/images/reward-tiers/025.png" class="img-fluid w-50">
-          <div>
-            <h3>Customize your drink</h3>
-            <p>Make your drink just right with an extra espresso shot, dairy substitute or a dash of your favorite
-              syrup.</p>
-          </div>
-        </div>
-      </div>
-
-      <div id="50" class="tabcontent">
-        <div class="d-flex align-items-center">
-          <img src="assets/images/reward-tiers/050.png" class="img-fluid w-50">
-          <div>
-            <h3>Brewed hot coffee, bakery item or hot tea</h3>
-            <p>Pair coffee cake or an almond croissant with your fresh cup of hot brew.</p>
-          </div>
-        </div>
-      </div>
-
-      <div id="150" class="tabcontent">
-        <div class="d-flex align-items-center">
-          <img src="assets/images/reward-tiers/150.png" class="img-fluid w-50">
-          <div>
-            <h3>Handcrafted drink, hot breakfast or parfait</h3>
-            <p>Have a really good morning with a breakfast sandwich, oatmeal or your favorite drink.</p>
-          </div>
-        </div>
-      </div>
-
-      <div id="200" class="tabcontent">
-        <div class="d-flex align-items-center">
-          <img src="assets/images/reward-tiers/200.png" class="img-fluid w-50">
-          <div>
-            <h3>Salad, sandwich or protein box</h3>
-            <p>Nourish your day with a hearty Chipotle Chicken Wrap or Eggs & Cheese Protein Box.</p>
-          </div>
-        </div>
-      </div>
-
-      <div id="400" class="tabcontent">
-        <div class="d-flex align-items-center">
-          <img src="assets/images/reward-tiers/400.png" class="img-fluid w-50">
-          <div>
-            <h3>Select merchandise or at-home coffee</h3>
-            <p>Take home a signature cup, a bag of coffee or your choice of select coffee accessories.</p>
-          </div>
-        </div>
-      </div>
+      <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="tab tier-tab nav-tabs">
+        <li [ngbNavItem]="1">
+          <a ngbNavLink class="tablinks sm-semi-bold-heading reward">25 <i
+              class="fas fa-star gold font-size-xs"></i></a>
+          <ng-template ngbNavContent>
+            <div class="custom-tabcontent">
+              <div class="d-flex align-items-center">
+                <img src="assets/images/reward-tiers/025.png" class="img-fluid w-50">
+                <div>
+                  <h3 class="pb-1">Customize your drink</h3>
+                  <p>Make your drink just right with an extra espresso shot, dairy substitute or a dash of your favorite
+                    syrup.</p>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+        </li>
+        <li [ngbNavItem]="2">
+          <a ngbNavLink class="tablinks sm-semi-bold-heading reward">50 <i
+              class="fas fa-star gold font-size-xs"></i></a>
+          <ng-template ngbNavContent>
+            <div class="custom-tabcontent">
+              <div class="d-flex align-items-center">
+                <img src="assets/images/reward-tiers/050.png" class="img-fluid w-50">
+                <div>
+                  <h3 class="pb-1">Brewed hot coffee, bakery item or hot tea</h3>
+                  <p>Pair coffee cake or an almond croissant with your fresh cup of hot brew.</p>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+        </li>
+        <li [ngbNavItem]="3">
+          <a ngbNavLink class="tablinks sm-semi-bold-heading reward">150
+            <i class="fas fa-star gold font-size-xs"></i></a>
+          <ng-template ngbNavContent>
+            <div class="custom-tabcontent">
+              <div class="d-flex align-items-center">
+                <img src="assets/images/reward-tiers/150.png" class="img-fluid w-50">
+                <div>
+                  <h3 class="pb-1">Handcrafted drink, hot breakfast or parfait</h3>
+                  <p>Have a really good morning with a breakfast sandwich, oatmeal or your favorite drink.</p>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+        </li>
+        <li [ngbNavItem]="4">
+          <a ngbNavLink class="tablinks sm-semi-bold-heading reward">200 <i
+              class="fas fa-star gold font-size-xs"></i></a>
+          <ng-template ngbNavContent>
+            <div class="custom-tabcontent">
+              <div class="d-flex align-items-center">
+                <img src="assets/images/reward-tiers/200.png" class="img-fluid w-50">
+                <div>
+                  <h3 class="pb-1">Salad, sandwich or protein box</h3>
+                  <p>Nourish your day with a hearty Chipotle Chicken Wrap or Eggs & Cheese Protein Box.</p>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+        </li>
+        <li [ngbNavItem]="5">
+          <a ngbNavLink class="tablinks sm-semi-bold-heading reward">400 <i
+              class="fas fa-star gold font-size-xs"></i></a>
+          <ng-template ngbNavContent>
+            <div class="custom-tabcontent">
+              <div class="d-flex align-items-center">
+                <img src="assets/images/reward-tiers/400.png" class="img-fluid w-50">
+                <div>
+                  <h3 class="pb-1">Select merchandise or at-home coffee</h3>
+                  <p>Take home a signature cup, a bag of coffee or your choice of select coffee accessories.</p>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+        </li>
+      </ul>
+      <div [ngbNavOutlet]="nav"></div>
     </div>
 
 
@@ -316,27 +326,8 @@
   </div>
 </div>
 
-<script>
-  /* tabs rewards */
-  function openReward(evt, points) {
-    console.log("open reward");
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(points).style.display = "block";
-    evt.currentTarget.className += " active";
-  };
-
-  document.getElementById("firstRewardTab").click();
-  document.getElementById("rewardsTab").click();
-
-  /* carousel */
+<script type="javascript">
+    /* carousel */
   $('#carouselFreebies').on('slid', '', checkitem);  // on caroussel move
   $('#carouselFreebies').on('slid.bs.carousel', '', checkitem); // on carousel move
 
