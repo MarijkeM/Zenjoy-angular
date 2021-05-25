@@ -203,6 +203,10 @@ a.black-link {
     width: 20%;
 }
 
+.w-45 {
+    width: 45%;
+}
+
 .w-80 {
     width: 80%;
 }
@@ -224,6 +228,12 @@ a.black-link {
 .md-semi-bold-heading {
     font-size: 1.7rem;
     font-weight: 550;
+}
+
+.subtitle {
+    color: grey;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .image-steps {
@@ -263,4 +273,14 @@ a.black-link {
 .modal-header {
     border-bottom: none;
     padding-bottom: 0;
+}
+
+a.starbucks-link {
+    color: $primary-medium;
+    text-decoration: underline;
+
+    &:hover,
+    &:focus {
+        text-decoration: none;
+    }
 }
