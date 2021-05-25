@@ -7,11 +7,25 @@ import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
   styleUrls: ['./modal-extras.component.scss']
 })
 export class ModalExtrasComponent implements OnInit {
-  @Input() name: any;
+  @Input() modalName: any;
 
   constructor(public activeModal: NgbActiveModal) {}
 
   ngOnInit(): void {
+    switch (this.modalName) {
+      case "Freebies": {
+        //statements; 
+        break;
+      }
+      case "Order": {
+        //statements; 
+        break;
+      }
+      case "Faster": {
+        //statements; 
+        break;
+      }
+    };
   }
 
 }

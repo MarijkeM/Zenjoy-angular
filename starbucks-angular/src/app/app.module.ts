@@ -14,6 +14,7 @@ import { StarCodesComponent } from './components/star-codes/star-codes.component
 import { InformationComponent } from './components/information/information.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
+import { CarouselComponent } from './components/endless-extras/carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { HeaderComponent } from './components/header/header.component';
     StarCodesComponent,
     InformationComponent,
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,

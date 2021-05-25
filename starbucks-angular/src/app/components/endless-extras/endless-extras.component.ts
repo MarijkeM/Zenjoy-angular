@@ -10,15 +10,15 @@ import { ModalExtrasComponent } from './modal-extras/modal-extras.component';
 })
 export class EndlessExtrasComponent implements OnInit {
 
-  constructor(private modalService: NgbModal) {}
+  constructor(private modalService: NgbModal) { }
 
   ngOnInit(): void {
   }
 
-  openModal() {
-    console.log("open");
+  openModal(modalName: string) {
+    console.log(modalName);
     const modalRef = this.modalService.open(ModalExtrasComponent);
-    modalRef.componentInstance.name = 'World';
-  };
+    modalRef.componentInstance.modalName = modalName;
+  }
 
 }
