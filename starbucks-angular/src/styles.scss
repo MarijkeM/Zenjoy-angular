@@ -31,6 +31,7 @@ body {
     background: $primary-dark;
     color: $primary-lightest;
     width: 100%;
+    padding-left: 5rem;
 }
 
 .tab,
@@ -142,7 +143,6 @@ body {
 
 .text-upper {
     text-transform: uppercase;
-    letter-spacing: 0.1em;
 }
 
 .text-bold {
@@ -158,11 +158,10 @@ a.black-link {
 }
 
 .star-image {
-    background-image: linear-gradient(rgba(212, 233, 226, 0.2), rgba(212, 233, 226, 0.2)),
-        url("/assets/images/hero/xl-hero-desktop_2021.png");
+    background-image: url("/assets/images/hero/xl-hero-desktop_2021.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
+
 }
 
 .star-text {
@@ -173,6 +172,10 @@ a.black-link {
 
 .section {
     margin-bottom: 100px;
+
+    &.section-join {
+        background-color: $primary-light;
+    }
 
     &.section-getting-started {
         text-align: center;
@@ -193,18 +196,43 @@ a.black-link {
         margin-left: auto;
         margin-right: auto;
     }
+
+    &.section-payments {
+        background-color: $base-grey;
+        padding: 2rem;
+    }
 }
 
 .gold {
     color: $gold;
 }
 
+.w-15 {
+    width: 15%;
+}
+
 .w-20 {
     width: 20%;
 }
 
+.w-30 {
+    width: 30%;
+}
+
+.w-40 {
+    width: 40%;
+}
+
 .w-45 {
     width: 45%;
+}
+
+.w-60 {
+    width: 60%;
+}
+
+.w-70 {
+    width: 70%;
 }
 
 .w-80 {
@@ -218,6 +246,7 @@ a.black-link {
 .xsm-semi-bold-heading {
     font-size: 1.2rem;
     font-weight: 550;
+    padding-bottom: 1rem;
 }
 
 .sm-semi-bold-heading {
@@ -237,7 +266,7 @@ a.black-link {
 }
 
 .image-steps {
-    height: 45%;
+    height: 50%;
     margin: auto;
 }
 
