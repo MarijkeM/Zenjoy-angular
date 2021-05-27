@@ -16,7 +16,7 @@
         <p>Not only can you earn free coffee, look forward to a birthday treat plus coffee and tea refills.</p>
       </div>
       <div class="w-90">
-        <button type="button" class="btn btn-link" (click)="openModal('Freebies')">
+        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modalFreebies">
           Learn more
         </button>
       </div>
@@ -31,7 +31,7 @@
         <p>Enjoy the convenience of in-store, curbside or drive-thru pickup at select stores.</p>
       </div>
       <div class="w-90">
-        <button type="button" class="btn btn-link" (click)="openModal('Order')">
+        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modalOrder">
           Learn more
         </button>
       </div>
@@ -46,10 +46,67 @@
         <p>Earn Stars even quicker with Bonus Star challenges, Double Star Days and exciting games.</p>
       </div>
       <div class="w-90">
-        <button type="button" class="btn btn-link w-90" (click)="openModal('Faster')">
+        <button type="button" class="btn btn-link w-90" data-bs-toggle="modal" data-bs-target="#modalChallenge">
           Learn more
         </button>
       </div>
+
+
+      <!-- Modal freebies-->
+      <div class="modal fade" id="modalFreebies" tabindex="-1" aria-labelledby="modalFreebiesLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <app-carousel-freebies></app-carousel-freebies>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal order-->
+      <div class="modal fade" id="modalOrder" tabindex="-1" aria-labelledby="modalOrderLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <app-carousel-order></app-carousel-order>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Challenge-->
+      <div class="modal fade" id="modalChallenge" tabindex="-1" aria-labelledby="modalChallengeLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <app-carousel-challenge></app-carousel-challenge>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
 
     </div>
   </div>

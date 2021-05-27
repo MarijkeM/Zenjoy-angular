@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ModalExtrasComponent } from './modal-extras.component';
+import { CarouselFreebiesComponent } from './carousel-freebies.component';
 
-describe('ModalExtrasComponent', () => {
-  let component: ModalExtrasComponent;
-  let fixture: ComponentFixture<ModalExtrasComponent>;
+describe('CarouselFreebiesComponent', () => {
+  let component: CarouselFreebiesComponent;
+  let fixture: ComponentFixture<CarouselFreebiesComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ModalExtrasComponent ]
+      declarations: [ CarouselFreebiesComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ModalExtrasComponent);
+    fixture = TestBed.createComponent(CarouselFreebiesComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

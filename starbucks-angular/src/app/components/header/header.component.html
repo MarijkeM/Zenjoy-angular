@@ -1,5 +1,5 @@
-<nav class="navbar navbar-light navigation fixed-top px-5 py-0">
-    <div class="d-flex align-items-center">
+<nav class="navbar navbar-expand-lg navbar-light navigation fixed-top px-5 py-0">
+    <div class="container-fluid">
         <div class="logo">
             <a class="navbar-brand" href="/starbucks-angular/src/app/app.component.html">
                 <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 62 62" role="img">
@@ -17,19 +17,29 @@
                 </svg>
             </a>
         </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-        <div class="tab mr-auto h-100">
-            <button class="tablinks text-upper text-bold my-auto">Menu</button>
-            <button class="tablinks text-upper text-bold active" id="rewardsTab">Rewards</button>
-            <button class="tablinks text-upper text-bold">Gift cards</button>
+
+        <div class="collapse navbar-collapse bc-white " id="navbarSupportedContent">
+            <div class="w-100 d-flex flex-wrap justify-content-between align-items-center">
+                <div class="tab">
+                    <button class="tablinks text-upper text-bold my-auto">Menu</button>
+                    <button class="tablinks text-upper text-bold active" id="rewardsTab">Rewards</button>
+                    <button class="tablinks text-upper text-bold">Gift cards</button>
+                </div>
+                <div class="d-flex flex-wrap">
+                    <a class="nav-link black-link font-weight-bold my-auto mr-3"
+                        href="/starbucks-angular/src/app/app.component.html"><i class="fas fa-map-marker-alt"
+                            aria-hidden="true"></i>
+                        Find a store</a>
+                    <button class="button white-button m-1">Sign in</button>
+                    <button class="button black-button m-1">Join now</button>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="d-flex align-items-center mr-2">
-        <a class="nav-link black-link font-weight-bold my-auto mr-3"
-            href="/starbucks-angular/src/app/app.component.html"><i class="fas fa-map-marker-alt"
-                aria-hidden="true"></i>
-            Find a store</a>
-        <button class="button white-button m-1">Sign in</button>
-        <button class="button black-button m-1">Join now</button>
-    </div>
+        </div>
+
 </nav>

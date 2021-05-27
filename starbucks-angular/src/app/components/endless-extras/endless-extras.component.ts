@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { ModalExtrasComponent } from './modal-extras/modal-extras.component';
 
 
 @Component({
@@ -10,15 +8,9 @@ import { ModalExtrasComponent } from './modal-extras/modal-extras.component';
 })
 export class EndlessExtrasComponent implements OnInit {
 
-  constructor(private modalService: NgbModal) { }
 
   ngOnInit(): void {
   }
 
-  openModal(modalName: string) {
-    console.log(modalName);
-    const modalRef = this.modalService.open(ModalExtrasComponent);
-    modalRef.componentInstance.modalName = modalName;
-  }
 
 }

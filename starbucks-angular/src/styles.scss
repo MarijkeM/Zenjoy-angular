@@ -37,7 +37,6 @@ body {
 .tab,
 .nav-tabs {
     overflow: hidden;
-    border-bottom: solid 3px transparent;
 
     &.tier-tab {
         display: flex;
@@ -58,11 +57,10 @@ body {
         &:hover,
         &:focus {
             color: $primary-medium;
-            border-bottom: $primary-medium solid 3px;
         }
 
         &.active {
-            border-bottom: $primary-medium solid 3px;
+            border-bottom: $primary-medium solid 5px;
         }
     }
 
@@ -100,7 +98,7 @@ body {
     background-color: white !important;
 }
 
-.navigation {
+.nav.navigation {
     height: 100px;
 }
 
@@ -112,7 +110,7 @@ body {
 
 .banner {
     position: fixed;
-    top: 96px;
+    top: 100px;
     width: 100%;
 }
 
@@ -161,7 +159,6 @@ a.black-link {
     background-image: url("/assets/images/hero/xl-hero-desktop_2021.png");
     background-repeat: no-repeat;
     background-size: cover;
-
 }
 
 .star-text {
@@ -203,7 +200,7 @@ a.black-link {
     }
 
     &.section-information {
-        background-color: $base-grey;
+        background-color: #f7f7f7;
     }
 }
 
@@ -286,6 +283,10 @@ a.black-link {
         height: 10px;
         border-radius: 100%;
         background-color: grey;
+
+        &:active {
+            background-color: black;
+        }
     }
 }
 
@@ -316,4 +317,8 @@ a.starbucks-link {
     &:focus {
         text-decoration: none;
     }
+}
+
+.bc-white {
+    background-color: white;
 }
