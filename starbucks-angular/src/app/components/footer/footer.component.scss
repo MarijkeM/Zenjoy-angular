@@ -1,0 +1,32 @@
+a.footer-link-light {
+    color: #70709e;
+    text-decoration: none;
+    padding-bottom: 1em;
+
+    &:hover {
+        color: black;
+    }
+    &:focus {
+        outline: #008248 solid 4px !important;
+        box-shadow: none;
+    }
+}
+
+a.footer-link-dark {
+    color: black;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+        box-shadow: grey;
+    }
+
+    &:focus {
+        outline: #008248 solid 4px !important;
+        box-shadow: none;
+    }
+}
+
+.social-media {
+    padding-right: 0.5em;
+}
